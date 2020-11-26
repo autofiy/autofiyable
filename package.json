@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "service provider library for autofiy framework",
   "main": "dist/main.js",
-  "types" : "dist/main.d.ts",
+  "types": "dist/main.d.ts",
   "author": "Ali Faris",
   "license": "MIT",
   "private": false,
   "scripts": {
     "build": "tsc --noEmit false",
     "test": "jest",
-    "coverage" : "jest --coverage"
+    "coverage": "jest --coverage"
   },
   "devDependencies": {
     "@types/jest": "^26.0.15",
@@ -18,5 +18,15 @@
     "jest-mock-extended": "^1.0.10",
     "ts-jest": "^26.4.4",
     "typescript": "^4.1.2"
-  }
+  },
+  "dependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/autofiy/service.git"
+  },
+  "bugs": {
+    "url": "https://github.com/autofiy/service/issues"
+  },
+  "homepage": "https://github.com/autofiy/service#readme"
 }
