@@ -1,21 +1,26 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "module": "commonjs",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
     "declaration": true,
-    "noImplicitAny": true,
-    "removeComments": true,
-    "experimentalDecorators": true,
-    "rootDir": "build",
     "sourceMap": true,
-    "listFiles": true,
-    "newLine": "LF",
-    "noEmitOnError": true
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false,
+    "outDir": "build"
   },
-  "include" : [
+  "include": [
     "src"
   ],
   "exclude": [
-    "node_modules", "out", ".next", "src/__example__" , "src/__tests__"
+    "src/__tests__" , "src/__example__"
   ]
 }
