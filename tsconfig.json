@@ -6,7 +6,7 @@
     "noImplicitAny": true,
     "removeComments": true,
     "experimentalDecorators": true,
-    "rootDir": ".",
+    "rootDir": "build",
     "sourceMap": true,
     "listFiles": true,
     "newLine": "LF",
