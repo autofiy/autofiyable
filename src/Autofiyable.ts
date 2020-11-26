@@ -1,5 +1,9 @@
 import { AutofiyableProps } from "./AutofiyableProps";
+import { ServiceConfiguration } from "./ServiceConfiguration";
 
-export interface Autofiyable<ServiceConfiguration , Props extends AutofiyableProps<ServiceConfiguration>>{
-    getProps() : Props;
+export interface Autofiyable<SC extends ServiceConfiguration = ServiceConfiguration,
+    Props extends AutofiyableProps<SC> = AutofiyableProps<SC>> {
+    getProps(): Props;
+
+    getDefaultServices(): SC;
 }
