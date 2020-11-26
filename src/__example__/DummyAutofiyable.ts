@@ -31,11 +31,6 @@ export class DummyAutofiyable implements Autofiyable<DummyServiceConfiguration, 
         };
     }
 
-    autofiy(): void {
-        console.log("Autofiy is GREAT");
-    }
-
-
     public a(): ServiceA {
         return this.serviceA;
     }
