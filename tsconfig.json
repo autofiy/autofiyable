@@ -11,5 +11,11 @@
     "listFiles": true,
     "newLine": "LF",
     "noEmitOnError": true
-  }
+  },
+  "include" : [
+    "src"
+  ],
+  "exclude": [
+    "node_modules", "out", ".next", "src/__example__" , "src/__tests__"
+  ]
 }

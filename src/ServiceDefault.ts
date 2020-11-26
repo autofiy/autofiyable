@@ -18,6 +18,6 @@ export class ServiceDefault<SC extends ServiceConfiguration = ServiceConfigurati
             return callback(this.autofiyable) as T;
         }
 
-        throw new Error(`Service ${serviceName} found`);
+        throw new Error(`Service ${serviceName} not found`);
     }
 }
