@@ -1,9 +1,9 @@
 {
   "name": "@autofiy/service",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "service provider library for autofiy framework",
-  "main": "dist/main.js",
-  "types": "dist/main.d.ts",
+  "main": "build/main.js",
+  "types": "build/main.d.ts",
   "author": "Ali Faris",
   "license": "MIT",
   "private": false,
