@@ -1,8 +1,8 @@
-import { ServiceProvider } from './../ServiceProvider';
+import {IServiceProvider, ServiceProvider} from '../ServiceProvider';
 import { DummyProps } from './DummyProps';
 import { ServiceB } from './DummyServiceB';
 import { DummyServiceConfiguration } from './DummyServiceConfiguration';
-import { Autofiyable } from './../Autofiyable';
+import { Autofiyable } from '../Autofiyable';
 import { ServiceA } from './DummyServiceA';
 
 
@@ -29,6 +29,10 @@ export class DummyAutofiyable implements Autofiyable<DummyServiceConfiguration, 
             serviceA: () => new ServiceA(this),
             serviceB: () => new ServiceB(this)
         };
+    }
+
+    getServiceProvider(): IServiceProvider {
+        return new ServiceProvider(this);
     }
 
     public a(): ServiceA {

@@ -1,14 +1,14 @@
-import { ServiceA } from './../__example__/DummyServiceA';
-import { DummyProps } from './../__example__/DummyProps';
-import { DummyAutofiyable } from './../__example__/DummyAutofiyable';
+import {ServiceA} from '../__example__/DummyServiceA';
+import {DummyProps} from '../__example__/DummyProps';
+import {DummyAutofiyable} from '../__example__/DummyAutofiyable';
 
 describe("ExampleTest", () => {
 
     it("should return props", () => {
         const props: DummyProps = {
-            dummyProps : 'DUMMY VALUE',
+            dummyProps: 'DUMMY VALUE',
             services: {
-                serviceA: autofiyable => new ServiceA(autofiyable, "PASSED SERVICE A")
+                serviceA: (autofiyable: any) => new ServiceA(autofiyable, "PASSED SERVICE A"),
             }
         };
         const autofiyable = new DummyAutofiyable(props);
@@ -19,7 +19,7 @@ describe("ExampleTest", () => {
         const props: DummyProps = {
             dummyProps: 'DUMMY VALUE',
             services: {
-                serviceA: autofiyable => new ServiceA(autofiyable, "PASSED SERVICE A")
+                serviceA: (autofiyable: any) => new ServiceA(autofiyable, "PASSED SERVICE A")
             }
         };
         const autofiyable = new DummyAutofiyable(props);
