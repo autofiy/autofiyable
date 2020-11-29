@@ -1,7 +1,7 @@
 {
-  "name": "@autofiy/service",
-  "version": "1.0.1",
-  "description": "service provider library for autofiy framework",
+  "name": "@autofiy/autofiyable",
+  "version": "1.0.0",
+  "description": "core library for autofiy framework",
   "main": "build/main.js",
   "types": "build/main.d.ts",
   "author": "Ali Faris",

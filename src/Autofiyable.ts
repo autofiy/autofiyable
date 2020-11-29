@@ -33,7 +33,3 @@ export abstract class AutofiyableComponent<Props extends AutofiyableProps<SC>, S
 
     abstract getServiceProvider(): IServiceProvider;
 }
-
-
-
-
