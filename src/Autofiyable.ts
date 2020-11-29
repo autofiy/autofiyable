@@ -1,12 +1,15 @@
 import {AutofiyableProps} from "./AutofiyableProps";
 import {ServiceConfiguration} from "./ServiceConfiguration";
 import React from "react";
+import {IServiceProvider} from "./ServiceProvider";
 
 export interface Autofiyable<SC extends ServiceConfiguration = ServiceConfiguration,
     Props extends AutofiyableProps<SC> = AutofiyableProps<SC>> {
     getProps(): Props;
 
     getDefaultServices(): SC;
+
+    getServiceProvider(): IServiceProvider;
 }
 
 
@@ -26,5 +29,11 @@ export abstract class AutofiyableComponent<Props extends AutofiyableProps<SC>, S
     }
 
     abstract getDefaultServices(): SC;
+
+
+    abstract getServiceProvider(): IServiceProvider;
 }
+
+
+
 
