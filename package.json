@@ -10,7 +10,8 @@
   "scripts": {
     "build": "tsc --noEmit false",
     "test": "jest",
-    "coverage": "jest --coverage"
+    "coverage": "jest --coverage",
+    "deploy"  : "rm -rf build && npm run build && npm publish"
   },
   "devDependencies": {
     "@types/jest": "^26.0.15",
