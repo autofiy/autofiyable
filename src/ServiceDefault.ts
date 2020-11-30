@@ -1,6 +1,6 @@
-import { Autofiyable } from './Autofiyable';
-import { ServiceConfiguration } from './ServiceConfiguration';
-import { Service } from './Service';
+import {Autofiyable} from './Autofiyable';
+import {ServiceConfiguration} from './ServiceConfiguration';
+import {Service} from './AutofiyableService';
 
 export class ServiceDefault<SC extends ServiceConfiguration = ServiceConfiguration> {
 

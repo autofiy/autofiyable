@@ -1,10 +1,10 @@
-import { Autofiyable } from "./Autofiyable";
-import { Service } from "./Service";
-import { ServiceConfiguration } from "./ServiceConfiguration";
-import { ServiceDefault } from "./ServiceDefault";
+import {Autofiyable} from "./Autofiyable";
+import {AutofiyableService, Service} from "./AutofiyableService";
+import {ServiceConfiguration} from "./ServiceConfiguration";
+import {ServiceDefault} from "./ServiceDefault";
 
 export interface IServiceProvider<SC extends ServiceConfiguration = ServiceConfiguration> {
-    getService<T extends Service>(key: keyof SC, customHandling?: () => T | undefined): T;
+    getService<T extends AutofiyableService>(key: keyof SC, customHandling?: () => T | undefined): T;
 }
 
 export class ServiceProvider<SC extends ServiceConfiguration = ServiceConfiguration> implements IServiceProvider<SC> {

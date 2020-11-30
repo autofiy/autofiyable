@@ -1,6 +1,6 @@
 {
   "name": "@autofiy/autofiyable",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "core library for autofiy framework",
   "main": "build/main.js",
   "types": "build/main.d.ts",
@@ -11,7 +11,7 @@
     "build": "tsc --noEmit false",
     "test": "jest",
     "coverage": "jest --coverage",
-    "deploy"  : "rm -rf build && npm run build && npm publish"
+    "deploy"  : "rm -rf build && npm run build && npm publish --access public"
   },
   "devDependencies": {
     "@types/jest": "^26.0.15",

@@ -1,6 +1,6 @@
-import { ServiceBase } from './../Service';
+import { AutofiyableServiceBase } from '../AutofiyableService';
 import { DummyAutofiyable } from './DummyAutofiyable';
-export class ServiceB extends ServiceBase {
+export class ServiceB extends AutofiyableServiceBase {
 
     private readonly value: string;
 
